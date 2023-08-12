@@ -1,7 +1,9 @@
 @extends('layouts')
 @section('content')
     <div class="mycontent">
+
         <div class="myapp">
+            <a class="btn btn-sm btn-primary" href="admin">Admin Visit</a>
             <h2 class="text-center">Insert Your Record <a href="{{route('display.info')}}" class="btn btn-sm btn-primary">View All Record</a></h2>
             @if ($errors->any())
                 <div class="alert alert-danger">
