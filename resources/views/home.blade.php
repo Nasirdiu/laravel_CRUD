@@ -2,8 +2,10 @@
 @section('content')
     <div class="mycontent">
         <div class="myapp">
-            <h2 class="text-center">Insert Your Record <a href="" class="btn btn-sm btn-primary">View All Record</a></h2>
-            <form action="">
+            <h2 class="text-center">Insert Your Record <a href="{{route('display.info')}}" class="btn btn-sm btn-primary">View All Record</a></h2>
+
+            <form action="{{route('store.info')}}" method="POST">
+                @csrf
                 <div class="form-group mb-2">
                     <label for="" class="form-label">Name</label>
                     <input type="text" name="name" class="form-control">
